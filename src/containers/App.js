@@ -9,6 +9,9 @@ class App extends React.Component {
         this.state = {
             data: []
         };
+
+        this.addTodo = this.addTodo.bind(this)
+        this.removeTodo = this.removeTodo.bind(this)
     }
     addTodo(val) {
         const todo = {
